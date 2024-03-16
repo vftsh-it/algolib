@@ -29,8 +29,8 @@ typedef struct {
 
 /* static array */
 typedef struct {
-    int *head;
-    unsigned int size;
+    int *const head;
+    const unsigned int size;
 } stat_arr_t;
 
 /* dynamic array */
