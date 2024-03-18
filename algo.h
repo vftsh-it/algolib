@@ -2,6 +2,8 @@
 // Created by NBAH on 09.07.2023.
 //
 
+#pragma once
+
 /* A plus B task */
 typedef struct {
     int val;
@@ -25,12 +27,22 @@ typedef struct {
     #include "stdlib.h"
 #endif
 
-#pragma once
+#ifndef TYPE
+    #error "TYPE is unknown!"
+#endif
+
+#define string const char * 
+
+/* operation output */
+typedef struct {
+    TYPE *value;
+    int code;
+} output_t;
 
 /* static array */
 typedef struct {
-    int *const head;
-    const unsigned int size;
+    TYPE *head;
+    unsigned int size;
 } stat_arr_t;
 
 /* dynamic array */
