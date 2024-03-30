@@ -54,14 +54,14 @@ typedef struct {
 
 /* doubly linked list's node */
 typedef struct Node {
-    int value;
+    TYPE *value;
     struct Node *prev;
     struct Node *next;
 } node_t;
 
 /* singly linked list's node */
 typedef struct SingleNode {
-    int value;
+    TYPE *value;
     struct SingleNode *next;
 } singly_node_t;
 
